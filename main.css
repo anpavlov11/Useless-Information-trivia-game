@@ -1,0 +1,6 @@
+#directions {
+    height: max-content;
+    width: max-content;
+    background-color: black;
+    transition: opacity 1s;
+}
