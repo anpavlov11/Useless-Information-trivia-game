@@ -1,0 +1,6 @@
+Title 1 Game name
+    Title 2 sub name
+        Add div for directions overlay
+            Use style opacity property
+            Use animation property to fade out directions overlay
+            Add event listener to start game
