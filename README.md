@@ -13,8 +13,19 @@ Many of us have a wealth of useless knowledge. Let's see what you know.
 
 
 # Pseudocode
-Open HTML
-    Heading 1 Usleless Knowledge;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "main.css">
+    <script src = "app.js" defer></script>
+    <title>Useless Information: a trivia game</title>
+</head>
+
+    Heading 1 Useless Knowledge;
         Heading 2 a trivia game;
           Open body
             Open div for directions overlay
@@ -80,4 +91,4 @@ Open HTML
         click event reset/new game;
       
         Close body
-Close HTML
+</html>
