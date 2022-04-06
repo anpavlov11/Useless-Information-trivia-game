@@ -34,7 +34,7 @@
 
 // click event reset/new game;
 
-const target = document.getElementById("target");
+const target = document.querySelector(".directions");
 
 target.addEventListener('click', () => target.style.opacity = '0');
 target.addEventListener('transitionend', () => target.remove());
