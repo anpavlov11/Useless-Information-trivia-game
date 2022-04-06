@@ -1,14 +1,36 @@
 Heading 1 Usleless Knowledge;
     Heading 2 a trivia game;
-        Add div for directions overlay
-            Use style opacity property;
-                Use animation property to fade out directions overlay;
-            Add event listener click event to start game;
+
+        Open div for directions overlay
+            Text describing to the user how the game works;
+                Use style opacity property;
+                    Add event listener click event to start game;
+                        Use animation property to fade out directions overlay;
         Close div;
+
     Heading 3 Categories;
-        Add div for hoverable dropdown list
+        Open div for hoverable dropdown list
             Add list item
             <<--placeholder for more list items-->>
         <<----placeholder for more Categories---->>
             <<---placeholder for more list item (difficulty levels)--->>
         Close div;
+
+    Open div class for question
+        Heading 4 question title;
+            Paragraph containing the question;
+    Close div;
+
+    Open div class for choices
+        Heading 4 answer title;
+            Create click event to reveal the multiple choice answers;
+                Paragraph containing choice1;
+                Paragraph containing choice2;
+                Paragraph containing choice3;
+        (((In Javascript create object lierals for the questions and answers; use an array to make questions easier to iterate over;
+        Create an output variable for HTML output
+        Create a forEach loop;
+        Name curentQuestion and questionNumber;
+        Create the array for possible correct answers;
+        Use a loop to fill in answer possibilities
+            Create a radio(?) button for each choice in a label element)))
