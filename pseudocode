@@ -1,6 +1,14 @@
-Title 1 Game name
-    Title 2 sub name
+Heading 1 Usleless Knowledge;
+    Heading 2 a trivia game;
         Add div for directions overlay
-            Use style opacity property
-            Use animation property to fade out directions overlay
-            Add event listener to start game
+            Use style opacity property;
+                Use animation property to fade out directions overlay;
+            Add event listener click event to start game;
+        Close div;
+    Heading 3 Categories;
+        Add div for hoverable dropdown list
+            Add list item
+            <<--placeholder for more list items-->>
+        <<----placeholder for more Categories---->>
+            <<---placeholder for more list item (difficulty levels)--->>
+        Close div;
