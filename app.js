@@ -1,3 +1,8 @@
+const target = document.querySelector(".directions");
+
+target.addEventListener('click', () => target.style.opacity = '0');
+target.addEventListener('transitionend', () => target.remove());
+
 // Create object literals for the questions and answers; use an array to make questions easier to iterate over;
 // Create an output variable for HTML output;
 // Create a forEach loop;
@@ -33,8 +38,3 @@
 //                 console.log you know nothing of nothing...you must be great fun
 
 // click event reset/new game;
-
-const target = document.querySelector(".directions");
-
-target.addEventListener('click', () => target.style.opacity = '0');
-target.addEventListener('transitionend', () => target.remove());
