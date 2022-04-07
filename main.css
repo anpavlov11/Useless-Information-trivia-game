@@ -36,3 +36,45 @@ p2 {
     font-size: 72px;
     padding-top: 75px;
 }
+
+h4  {
+    background-color: rgba(3, 119, 252, .5);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    color:brown;
+    }
+
+#navMenu.navmenu {
+    background-color: rgba(3, 119, 252, .5);
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    background-color: rgba(3, 119, 252, .5);
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 18px 22px;
+    font-size: 20px;
+}
+
+.thedrop    {
+    float: left;
+    overflow: hidden;
+}
+
+.thedrop .navbutton1    {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color:brown;
+    background-color: rgba(3, 119, 252, .5);
+    min-width: 220px;
+}
+
+.thedrop-content    {
+    position: absolute;
+    background-color: azure;
+    color: rgba(108, 143, 184, .5);
+}
