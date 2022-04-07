@@ -1,3 +1,7 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .directions {
     height: 100%;
     width: 100%;
@@ -8,14 +12,12 @@
     text-align: center;
 }
 h2 {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     font-weight: lighter;
     margin-top: 0px;
@@ -23,23 +25,50 @@ p {
 }
 
 li {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 32px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
 p2 {
-    font-family: 'Courier New', Courier, monospace;
     font-style: italic;
     font-weight: bolder;
     font-size: 72px;
     padding-top: 75px;
 }
 
-h4  {
+a {
+    text-decoration: none;
+    color: #cd6e01;
+}
+    
+a:hover {
+    text-decoration: underline;
+}
+    
+ul {
+    list-style: none;
+}
+
+li.nav {
+    display: inline;
+    padding: 15px;
+}
+    
+nav ul {
+    text-align: center;
+    font-size: 18px;
+    margin: 25px;
+}
+
+header ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+/* h4  {
     background-color: rgba(3, 119, 252, .5);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
     color:brown;
     }
@@ -49,12 +78,11 @@ h4  {
     overflow: hidden;
 }
 
-.topnav a {
+.navmenu a {
     float: left;
     display: block;
     background-color: rgba(3, 119, 252, .5);
     color: brown;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 18px 22px;
     font-size: 20px;
@@ -66,7 +94,6 @@ h4  {
 }
 
 .thedrop .navbutton1    {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     color:brown;
     background-color: rgba(3, 119, 252, .5);
@@ -78,3 +105,11 @@ h4  {
     background-color: azure;
     color: rgba(108, 143, 184, .5);
 }
+
+.thedrop-content a  {
+    color: rgba(93, 107, 122, .7);
+    padding: 24px 24px;
+    display: block;
+    text-align: center;
+} */
+
