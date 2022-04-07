@@ -23,3 +23,17 @@ Each of the 10 questions have 3 answer choices. Users are given 5 second to sele
 1. The appropriate points will be given when an answer is submitted.
 2. The score box will record the user's points and display the accurate sum at the end of the game.
 3. A Directions tab will be in the navigation bar with Categories.
+
+
+
+
+
+
+
+
+
+
+
+# with help from...
+- w3schools
+- stackoverflow
