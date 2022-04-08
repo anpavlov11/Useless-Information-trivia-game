@@ -1,8 +1,8 @@
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.directions {
+main {
     height:max-content;
     width: max-content;
     padding: 15% 15%;
@@ -36,15 +36,6 @@ p2 {
     font-size: 72px;
     padding-top: 75px;
 }
-
-a {
-    text-decoration: none;
-    color: #cd6e01;
-}
-    
-a:hover {
-    text-decoration: underline;
-}
     
 ul {
     list-style: none;
@@ -54,15 +45,3 @@ li.nav {
     display: inline;
     padding: 15px;
 }
-    
-nav ul {
-    text-align: center;
-    font-size: 18px;
-    margin: 25px;
-}
-
-header ul {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
