@@ -1,6 +1,4 @@
-import { target } from "./modules/canvas.js";
-
-let myCanvas = target('myCanvas', document.body, 300, 700);
+// let myCanvas = target('myCanvas', document.body, 300, 700);
 
 const useKnow = document.querySelector('.asksandanswers');
 const questions = [{
