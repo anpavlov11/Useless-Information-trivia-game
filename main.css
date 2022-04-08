@@ -3,11 +3,11 @@ body{
 }
 
 .directions {
-    height: 100%;
-    width: 100%;
-    padding: 5% 5%;
+    height:max-content;
+    width: max-content;
+    padding: 15% 15%;
     background-color: rgba(0, 0, 0, .5);
-    transition-property: all 4s;
+    transition-duration: 7s;
     color: white;
     text-align: center;
 }
@@ -66,50 +66,3 @@ header ul {
     top: 0;
     right: 0;
   }
-
-/* h4  {
-    background-color: rgba(3, 119, 252, .5);
-    font-size: 22px;
-    color:brown;
-    }
-
-#navMenu.navmenu {
-    background-color: rgba(3, 119, 252, .5);
-    overflow: hidden;
-}
-
-.navmenu a {
-    float: left;
-    display: block;
-    background-color: rgba(3, 119, 252, .5);
-    color: brown;
-    text-align: center;
-    padding: 18px 22px;
-    font-size: 20px;
-}
-
-.thedrop    {
-    float: left;
-    overflow: hidden;
-}
-
-.thedrop .navbutton1    {
-    font-size: 18px;
-    color:brown;
-    background-color: rgba(3, 119, 252, .5);
-    min-width: 220px;
-}
-
-.thedrop-content    {
-    position: absolute;
-    background-color: azure;
-    color: rgba(108, 143, 184, .5);
-}
-
-.thedrop-content a  {
-    color: rgba(93, 107, 122, .7);
-    padding: 24px 24px;
-    display: block;
-    text-align: center;
-} */
-

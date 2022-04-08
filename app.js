@@ -1,8 +1,15 @@
-const target = document.querySelector(".directions");
+import { target } from "./modules/canvas.js";
 
-target.addEventListener('click', () => target.style.opacity = '0');
-target.addEventListener('transitionend', () => target.remove());
+let myCanvas = target('myCanvas', document.body, 300, 700);
 
+const useKnow = document.querySelector('.asksandanswers');
+const questions = [{
+    ask: 'Who was the first US Secretary of the Treasury?', answer: 'Alexander Hamilton',
+    options: [{title: 'Aaron Burr'}, {title: 'John Adams'}, {title: 'Alexander Hamilton'}], 
+    ask: 'What is the only horror movie to win the Academy Award for Best Picture?', answer: 'Silence of the Lambs',
+    options: [{title: 'Silence of the Lambs'}, {title: 'Halloween'}, {title: 'The Shining'}], 
+    ask: ''
+    },]
 // Create object literals for the questions and answers; use an array to make questions easier to iterate over;
 // Create an output variable for HTML output;
 // Create a forEach loop;
