@@ -34,6 +34,7 @@ Each of the 10 questions have 3 answer choices. Users are given 5 second to sele
 <br>
 <br>
 
-# with help from...
+## with help from...
 - w3schools
 - stackoverflow
+- Chris Cope

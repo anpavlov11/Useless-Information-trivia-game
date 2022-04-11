@@ -34,23 +34,24 @@ const questions = [{
         const question =  questions[thisQuestion];
         const lastOne = thisQuestion === questions.length - 1;
 
-        useKnow.innerHTML =
-            <><h3>${question.ask}</h3><form id="myForm">
-                <input type="radio" id="0" ask="option" value="0"></input>
-                <label for="0">${question.options[0].title}</label><br></br>
+        useKnow.innerHTML = `
+            <h3>${question.ask}</h3>
+            <form id="myForm">
+                <input type="radio" id="0" ask="option" value="0">
+                <label for="0">${question.options[0].title}</label><br>
 
-                <input type="radio" id="1" ask="option" value="1"></input>
-                <label for="1">${question.options[1].title}</label><br></br>
+                <input type="radio" id="1" ask="option" value="1">
+                <label for="1">${question.options[1].title}</label><br>
 
                 <input type="radio" id="2" ask="option" value="2"></input>
-                <label for="2">${question.options[2].title}</label><br></br>
+                <label for="2">${question.options[2].title}</label><br>
 
                 <p class="text"></p>
 
                 <button class="answer">Answer</button>
                 <button class="nextQuestion">${!lastOne ? 'Next' : 'Finish'}</button>
-            </form></>
-            ;
+            </form>
+            `;
 
         addClickListener(useKnow.querySelector('.nextQuestion'), handleNext);
         addClickListener(useKnow.querySelector('.answer'), handleAnswer);
@@ -87,4 +88,30 @@ const questions = [{
         }
     };
 
-    
+    const handleAnswer = e => {
+        const msg = document.getElementById('message');
+        const ans = document.getElementById('input [ask = "option"] : checked');
+
+        if (!ans) {
+            msg.innerHTML = "Pick an answer."
+            return;
+        }
+
+        const question = questions[thisQuestion];
+        const correctAns = question.answer;
+        const userAns = ans.value;
+
+        if (correctAns === userAns) {
+            msg.innerHTML = "Yes!!"
+        } else {
+            msg.innerHTML = "Nope."
+        }
+
+        document.getElementById("0").disabled = true;
+        document.getElementById("1").disabled = true;
+        document.getElementById("2").disabled = true;
+
+        answered = true;
+    };
+
+    giveQuestion();
