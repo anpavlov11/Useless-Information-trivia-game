@@ -1,4 +1,4 @@
-const useKnow = document.querySelector('.asksandanswers');
+const useKnow = document.querySelector('.asksAndOptions');
 const questions = [{
     ask: 'Who was the first US Secretary of the Treasury?', answer: 'Alexander Hamilton',
     options: [{title: 'Aaron Burr'}, {title: 'John Adams'}, {title: 'Alexander Hamilton'}], 
@@ -20,39 +20,71 @@ const questions = [{
     options: [{title: '1'}, {title: '3'}, {title: '0'}],
     ask: 'What is the capital of Canada?', answer: 'Ottawa',
     options: [{title: 'Ottawa'}, {title: 'Winnipeg'}, {title: 'Toronto'}],
-    },]
-// Create object literals for the questions and answers; use an array to make questions easier to iterate over;
-// Create an output variable for HTML output;
-// Create a forEach loop;
-//     Name curentQuestion and questionNumber;
-//         Create the array for possible correct answers;
-//             Use a loop to fill in answer possibilities)))
-//         Create a radio(?) button for each choice in a label element;
-//             Create submit button;
-//                 Use conditional if statement for submit click event---
-//                         if timer runs out before submit is clicked;
-//                             else submit is clicked;
-//                             revealAnswer();
-//                         revealAnswer function to determine a correct answer:
-//                             if answer is correct
-//                                 add 5 points to score;
-//                             else if answer is incorrect
-//                                 add 0 points;
-//                             else award 0 points;
+    },];
 
-// Function for end of game;
-// Trigger results
-//     Open div for results
-//         Conditional
-//             if player scores 50 points,
-//                 console.log genius of useless knowledge;
-//             else if player scores 40-49 points,
-//                 console.log you know a lot of nothing;
-//             else if player scores 30-39 points,
-//                 console.log you know a little of nothing;
-//             else if player scores 20-29,
-//                 console.log keep living, useless knowledge is all around you...remember it
-//             else
-//                 console.log you know nothing of nothing...you must be great fun
+    let thisQuestion = 0;
+    let answered = false;
 
-// click event reset/new game;
+    const giveQuestion = () => {
+        answered = false;
+
+        removeClickListener(useKnow.querySelector('.nextQuestion'), handleNext);
+        removeClickListener(useKnow.querySelector('.answer'), handleAnswer);
+
+        const question =  questions[thisQuestion];
+        const lastOne = thisQuestion === questions.length - 1;
+
+        useKnow.innerHTML =
+            <><h3>${question.ask}</h3><form id="myForm">
+                <input type="radio" id="0" ask="option" value="0"></input>
+                <label for="0">${question.options[0].title}</label><br></br>
+
+                <input type="radio" id="1" ask="option" value="1"></input>
+                <label for="1">${question.options[1].title}</label><br></br>
+
+                <input type="radio" id="2" ask="option" value="2"></input>
+                <label for="2">${question.options[2].title}</label><br></br>
+
+                <p class="text"></p>
+
+                <button class="answer">Answer</button>
+                <button class="nextQuestion">${!lastOne ? 'Next' : 'Finish'}</button>
+            </form></>
+            ;
+
+        addClickListener(useKnow.querySelector('.nextQuestion'), handleNext);
+        addClickListener(useKnow.querySelector('.answer'), handleAnswer);
+    }
+
+    const addClickListener = (btn, listener) => {
+        if (btn) btn.addClickListener('click', listener);
+    };
+
+    const removeClickListener = (btn, listener) => {
+        if (btn) btn.removeClickListener('click', listener)
+    };
+
+    const handleNext = e => {
+        e.preventDefault();
+
+        const msg = document.querySelector('.message');
+
+        if (document.querySelector('input [ask = "option"] : checked') === null) {
+            msg.innerHTML = "You have to choose an answer to continue."
+            return;
+        }
+
+        if (!answered) {
+            msg.innerHTML = "Press 'Answer' to continue."
+            return;
+        }
+
+        if (thisQuestion < questions.length - 1) {
+            thisQuestion++;
+            giveQuestion();
+        } else {
+            alert("Last one!");
+        }
+    };
+
+    
