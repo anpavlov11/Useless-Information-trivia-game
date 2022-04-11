@@ -28,8 +28,8 @@ const questions = [{
     const giveQuestion = () => {
         answered = false;
 
-        removeClickListener(useKnow.querySelector('.nextQuestion'), handleNext);
-        removeClickListener(useKnow.querySelector('.answer'), handleAnswer);
+        removeEventListener(useKnow.querySelector('.nextQuestion'), handleNext);
+        removeEventListener(useKnow.querySelector('.answer'), handleAnswer);
 
         const question =  questions[thisQuestion];
         const lastOne = thisQuestion === questions.length - 1;
@@ -49,24 +49,25 @@ const questions = [{
                 <p class="text"></p>
 
                 <button class="answer">Answer</button>
-                <button class="nextQuestion">${!lastOne ? 'Next' : 'Finish'}</button>
+                <button class="nextQuestion">${!lastOne ? 'Answer' : 'Next'}</button>
             </form>
             `;
 
-        addClickListener(useKnow.querySelector('.nextQuestion'), handleNext);
-        addClickListener(useKnow.querySelector('.answer'), handleAnswer);
+        addEventListener(useKnow.querySelector('.nextQuestion'), handleNext);
+        addEventListener(useKnow.querySelector('.answer'), handleAnswer);
+        
     }
 
-    const addClickListener = (btn, listener) => {
-        if (btn) btn.addClickListener('click', listener);
+    const addEventListener = (btn, event) => {
+        if (btn) btn.addEventListener('click', event);
     };
 
-    const removeClickListener = (btn, listener) => {
-        if (btn) btn.removeClickListener('click', listener)
+    const removeEventListener = (btn, event) => {
+        if (btn) btn.removeEventListener('click', event)
     };
 
-    const handleNext = e => {
-        e.preventDefault();
+    const handleNext = event => {
+        event.preventDefault();
 
         const msg = document.querySelector('.message');
 
@@ -76,7 +77,7 @@ const questions = [{
         }
 
         if (!answered) {
-            msg.innerHTML = "Press 'Answer' to continue."
+            msg.innerHTML = "Press 'Next' to continue."
             return;
         }
 
@@ -88,7 +89,7 @@ const questions = [{
         }
     };
 
-    const handleAnswer = e => {
+    const handleAnswer = event => {
         const msg = document.getElementById('message');
         const ans = document.getElementById('input [ask = "option"] : checked');
 
@@ -115,3 +116,4 @@ const questions = [{
     };
 
     giveQuestion();
+    Event.preventDefault();
