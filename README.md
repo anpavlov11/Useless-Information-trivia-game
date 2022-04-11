@@ -18,7 +18,7 @@ Each of the 10 questions have 3 answer choices. Users are given 5 second to sele
 
 
 # Stretch Goals...
-1. The user will be able to trigger the start of the game by clicking the Directions module after the directions are read.
+1. The user will be able to transition to the game page and the start of the game by clicking the Directions module after the directions are read.
 2. A Directions tab will be in the navigation bar with Categories.
 2. The user will be able to click the Random category and select Normal difficulty.
 4. The appropriate points will be given when an answer is submitted.
