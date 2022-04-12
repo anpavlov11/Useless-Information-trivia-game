@@ -4,8 +4,10 @@
 Many of us have a wealth of useless knowledge. This game's purpose is a fun way to feel good about the useless knowledge the user has retained in life. 
 
 ## Screenshots
-https://i.imgur.com/v9V9hlIm.png
-https://i.imgur.com/nt9nGsam.png
+<br>
+https://i.imgur.com/v9V9hlIb.png
+<br>
+https://i.imgur.com/nt9nGsab.png
 
 ## Technologies Used
 - JavaScript
