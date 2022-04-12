@@ -22,6 +22,8 @@ const questions = [{
     options: [{title: 'Ottawa'}, {title: 'Winnipeg'}, {title: 'Toronto'}],
     },];
 
+    document.querySelector('.asksAndOptions').style.display = "table";
+
     let thisQuestion = 0;
     let answered = false;
 
