@@ -1,22 +1,22 @@
-# Useless-Knowledge-trivia-game
+# Useless Knowledge: a trivia game
 
 ## About...
 Many of us have a wealth of useless knowledge. This game's purpose is a fun way to feel good about the useless knowledge the user has retained in life. 
 
-## Screenshots
+## Screenshots...
 https://i.imgur.com/v9V9hlI.png
 <br>
 https://i.imgur.com/nt9nGsa.png
 
-## Technologies Used
+## Technologies Used...
 - JavaScript
 - HTML
 - CSS
 
-## Getting Started
-https://anpavlov11.github.io/Useless-Knowledge-trivia-game/
+## Getting Started...
+<nav>https://github.com/anpavlov11/Useless-Knowledge-trivia-game.git
 
-## Next Steps
+## Next Steps...
 1. The countdown timer will be triggered when the question appears.
 2. Tabs for categories, difficulty level and directions will be in the navigation bar.
 3. The user will be able to select a category and select a difficulty level.
