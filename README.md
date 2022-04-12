@@ -1,8 +1,5 @@
 # Useless Knowledge: a trivia game
 <br>
-<br>
-<br>
-<br>
 
 ## About...
 Many of us have a wealth of useless knowledge. This game's purpose is a fun way to feel good about the useless knowledge the user has retained in life. 
@@ -22,7 +19,6 @@ https://i.imgur.com/nt9nGsa.png
 - JavaScript
 - HTML
 - CSS
-<br>
 <br>
 <br>
 
@@ -46,11 +42,8 @@ https://i.imgur.com/nt9nGsa.png
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 
-### with help from...
+#### with help from...
 - w3schools
 - stackoverflow
 - MDN
