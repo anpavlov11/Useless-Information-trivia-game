@@ -1,15 +1,13 @@
-body {
-    background-color: black;
+body2 {
     font-family: 'Courier New', Courier, monospace;
-    color: whitesmoke;
 }
 
 .directions {
-    height:max-content;
-    width: max-content;
-    padding: 15% 15%;
+    max-height: inherit;
+    max-width: inherit;
+    padding: 15%;
     background-color: rgba(0, 0, 0, .5);
-    transition-duration: 7s;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
     text-align: center;
 }
