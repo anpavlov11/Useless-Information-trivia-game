@@ -3,7 +3,7 @@ const questions = [{
   name: 'Who was the first US Secretary of the Treasury?', answer: 'Alexander Hamilton',
   options: [{ title: 'Aaron Burr' }, { title: 'John Adams' }, { title: 'Alexander Hamilton' }, { title: 'Oliver Wolcott, Jr.' } ]
 }, {
-   name: 'What is the name of the treaty that ended World War I', answer: 'The Treaty of Versailles',
+   name: 'What is the name of the treaty that ended World War I?', answer: 'The Treaty of Versailles',
   options: [{ title: 'The Vienna Convention' }, { title: 'The Paris Peace Treaties' }, { title: 'The Treaty of Versailles' }, { title: 'The German Treaty' } ]
 }, {
    name: 'What was the top-grossing movie of the 1990s?', answer: 'Titanic',
@@ -120,7 +120,7 @@ const handleSubmit = e => {
   if (correctAns === userAns) {
     msg.innerHTML = "Correct"
   } else {
-    msg.innerHTML = "Incorrect"
+    msg.innerHTML = "incorrect"
   }
 
   document.getElementById("0").disabled = true;

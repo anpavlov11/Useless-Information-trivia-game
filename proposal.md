@@ -11,16 +11,16 @@ Each of the 10 questions have 3 answer choices. Users are given 5 second to sele
 <img src = "https://i.imgur.com/EdNB97G.png" alt = "Useless Information">
 
 ## MVP Goals...
-1. The user will be able to transition to the game page and the start of the game by clicking the Directions module after the directions are read.
-2. The first question will appear when the Directions page transitions to the Game page.
-3. The Submit button will generate a message with the correct answer.
-4. Clicking NEW GAME button will trigger the start of a new game.
+1. The user will be able to transition to the game page and the start of the game by clicking the DIRECTIONS module after the directions are read.
+2. The first question will appear when the DIRECTIONS page transitions to the GAME page.
+3. The Submit button will the functionality of the NEXT button and show the next question.
+4. Clicking FINISH button will trigger the end of the game.
 
 
 ## Stretch Goals...
 1. The countdown timer will be triggered when the question appears.
-2. A Directions tab will be in the navigation bar with Categories.
-2. The user will be able to click the Random category and select Normal difficulty.
+2. A DIRECTIONS tab will be in the navigation bar with CATEGORIES.
+2. The user will be able to click the RANDOM category and select NORMAL difficulty.
 4. The appropriate points will be given when an answer is submitted.
 5. The score box will record the user's points and display the accurate sum at the end of the game.
 
